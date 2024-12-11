@@ -1,0 +1,110 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Increased gap between elements for better spacing */
+    max-width: 350px; /* Adjusted form width */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow for emphasis */
+    position: relative;
+    margin: 0 auto; /* Center the form on the page */
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; /* Space between title and the form */
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .form label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="tel"],
+  .form input[type="password"],
+  .form input[type="file"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 1px;
+    outline: none;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .form input[type="file"] {
+    padding: 10px 15px; /* Adjusted padding for file input */
+    font-size: 15px;
+  }
+  
+  .form label span {
+    color: grey;
+    font-size: 0.9em;
+    margin-bottom: 5px; /* Added margin for better spacing between label and input */
+  }
+  
+  .form label input:focus {
+    border-color: royalblue;
+    background-color: #f7f7f7; /* Slight background color change for focus state */
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 12px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  
